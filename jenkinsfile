@@ -1,12 +1,15 @@
 pipeline{
     agent any
     stages{
-        stage('bulid'){
-            sh 'sh echo "building"'
+        stage('build main'){
+            steps{
+                sh 'echo "building main"'
+            }
         }
-        stage('test'){
-            sh 'sh echo "Testing"'
+        stage('test main'){
+            steps{
+                sh 'echo "testing main"'
+            }
         }
-
     }
 }
