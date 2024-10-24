@@ -1,0 +1,12 @@
+pipeline{
+    agent any
+    stages{
+        stage('bulid'){
+            sh 'sh echo "building"'
+        }
+        stage('test'){
+            sh 'sh echo "Testing"'
+        }
+
+    }
+}
