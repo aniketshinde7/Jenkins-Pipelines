@@ -1,10 +1,10 @@
 pipeline{
     agent any
     stages{
-        stage('bulid'){
+        stage('bulid Dev'){
             sh 'sh echo "building"'
         }
-        stage('test'){
+        stage('test Dev'){
             sh 'sh echo "Testing"'
         }
 
