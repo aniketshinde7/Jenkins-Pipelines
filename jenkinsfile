@@ -3,12 +3,12 @@ pipeline{
     stages{
         stage('bulid Dev'){
             steps{
-                sh 'sh echo "building"'
+                sh 'echo "building"'
             }
         }
         stage('test Dev'){
             steps{
-                sh 'sh echo "Testing"'
+                sh 'echo "Testing"'
             }
         }
 
