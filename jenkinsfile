@@ -1,16 +1,19 @@
 pipeline{
     agent any
     stages{
-        stage('bulid Dev'){
-            steps{
-                sh 'echo "building"'
+        stage('build & test'){
+            parallel {
+                stage('buld'){
+                    steps{
+                        sh 'echo "building"'
+                    }
+                }
+                stage('test'){
+                    steps{
+                        sh 'echo "testing"'
+                    }
+                }
             }
         }
-        stage('test Dev'){
-            steps{
-                sh 'echo "Testing"'
-            }
-        }
-
     }
 }
